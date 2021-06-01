@@ -4,7 +4,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 
 import CampoInteiro from '../../../componentes/Camposinteiros';
 
-import estilosItem from '../estilosItem';
+import estilosItem from './estilosItem';
 
 import Botao from '../../../componentes/Botao/index';
 
@@ -52,7 +52,7 @@ export default function Item({nome, preco, descricao}){
                         }).format(total)}</Text>
                     </View>
                 </View>
-                <Botao valor="Adicionar" acao="{() => {}}"></Botao>
+                <Botao valor="Adicionar ao Carrinho" acao="{() => {}}"></Botao>
             </View>
         }
         <View style={estilosItem.divisor}></View>
